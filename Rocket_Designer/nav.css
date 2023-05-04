@@ -1,0 +1,39 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 10em);
+    overflow: hidden;
+    z-index: 1;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: .75em 5em .6em 5em;
+
+    background-color: white;
+    color: black;
+
+    box-shadow: 0 0 6px #5b5b5b;
+}
+
+.nav-right {
+    padding: 0;
+    height: auto;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-list li {
+    display: inline;
+    margin-left: 1.5em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}

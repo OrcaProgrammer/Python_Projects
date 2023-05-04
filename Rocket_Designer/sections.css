@@ -1,0 +1,21 @@
+.hero-section {
+    height: 45vw;
+    padding-top: 12em;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.black-bg{
+    background-color: black;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p{
+    font-size: 14px;
+}

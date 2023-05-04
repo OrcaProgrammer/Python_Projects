@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Calculator</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./test.css" />
+    <link rel="stylesheet" type="text/css" href="./nav.css" />
+    <link rel="stylesheet" type="text/css" href="./sections.css">
+    <link rel="stylesheet" type="text/css" href="./rocket.css">
+
+    <script src="//code.jquery.com/jquery-2.0.2.min.js"></script>  
+</head>
+<body>
+
+    <div class="rocket-section">
+
+    <h3>Rocket</h1>
+    <p>Input values for each of the stages and click calculate for find the basic properties of the rocket. 
+        Click on the add button to add another stage and refresh the page to reset everything.</p>
+
+    <div id="InputSection" class="input-section">
+
+        <div class="input-box">
+            <form action="">
+                <label>Payload Mass:</label>
+                <input type="number" class="payload-mass-input" value=""> Kg</input>
+            </form>
+        </div>
+        
+        <div class="input-display">
+            <p style="position: relative; top: 7rem; left: 4.4rem;">Payload</p>
+            <img src="./payload.svg" alt="Image of a payload">
+        </div>
+
+        <div class="input-box">
+            <form>
+                <label class="stage-launch-mass">Stage 1 Launch Mass:</label>
+                <input type="number" class="launch-mass-input" value=""> Kg</input>
+                <br><br>
+
+                <label class="stage-propellant-mass">Stage 1 Propellant Mass:</label>
+                <input type="number" class="prop-mass-input" value=""> Kg</input>
+                <br><br>
+
+                <label class="stage-isp">Stage 1 ISP:</label>
+                <input type="number" class="isp-input"> s</input>
+            </form>
+        </div>
+
+        <div class="input-display">
+            <p class="stage-number-display" style="position: relative; top: 7rem; left: 4.4rem;">Stage 1</p>
+            <img src="./stage.svg" alt="Image of a payload">
+        </div>
+
+        <div id="last-input-box" class="input-box">
+        </div>
+
+        <div id="last-input-display" class="input-display">
+            <button id="AddStageButton"><img src="./addButton.svg" alt="Add Button"></button>
+        </div>
+    </div>
+
+    <button id="CalculateButton">Calculate</button>
+
+    <div id="OutputSection" class="output-section">
+
+    </div>
+
+</div>
+
+<script src="./rocketCalc.js"></script>
+
+</body>
+</html>

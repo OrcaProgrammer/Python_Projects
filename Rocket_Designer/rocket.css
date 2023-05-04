@@ -1,0 +1,89 @@
+.rocket-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: fit-content;
+}
+
+.rocket-section h3{
+    margin-bottom: 1rem;
+}
+
+input {
+    margin: 0 auto;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #5b5b5b;
+    width: 7rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-section {
+    display: grid;
+
+    row-gap: 2rem;
+    grid-template-columns: auto auto;
+
+    height: fit-content;
+    padding: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.input-box {
+    height: 10rem;
+    padding: 0;
+
+    grid-column: 1;
+
+    display: flex;
+    align-items: center;
+}
+
+.input-display {
+    height: 10rem;
+    grid-column: 2;
+}
+
+.output-section {
+
+    height: fit-content;
+
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.output-wrapper {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#AddStageButton {
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+#ResetButton {
+    margin-left: 5rem;
+}
